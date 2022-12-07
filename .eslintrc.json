@@ -1,0 +1,30 @@
+{
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"babelOptions": {
+			"configFile": "./babel.config.json"
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"rules": {
+		"no-var": "error",
+		"semi": [2, "always"],
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+		"space-before-function-paren": [
+			"error",
+			{
+				"anonymous": "always",
+				"named": "never",
+				"asyncArrow": "never"
+			}
+		],
+		"lines-between-class-members": ["error", "always"],
+		"strict-boolean-expressions": 0,
+		"no-new-func": 0
+	}
+}
